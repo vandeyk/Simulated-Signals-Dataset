@@ -1,0 +1,65 @@
+% Calculate classical Hartley spectrum by PSD
+% Parameters:
+% N - number of samples
+% psdf(k*d_omega) - FUNCTION, PSD
+% Results:
+% xcas() - classical Hartley spectrum
+% omg = k*d_omega - vector of PSD function arguments
+% spm - vector of PSD function values
+function [ xcas,omg,spm ] = psd_xcas( N, psdf )
+lambda = 1; %phase density
+dt = 0.1; %time sampling interval
+T = N*dt;
+d_omega = 2*pi/dt; %angular frequency sampling interval
+xcas = zeros(N,1);
+omg = zeros(N,1);
+spm = zeros(N,1);
+xcas(1) = sqrt(psdf(0)/T);
+omg(1) = 0;
+spm(1) = psdf(0);
+for k=1:(N-1)
+xcas(k+1)=
+=(lambda+1)*sqrt(psdf(k*d_omega)/(T*(1+lambda^2)));
+omg(k+1) = k*d_omega;
+spm(k+1) = psdf(k*d_omega);
+end
+end
+
+% Transform from Hartley spectrum to Gen.Hartley-Paley spectrum
+% by Fourier matrix
+% Parameters:
+% p - base of number system
+% n - number of digits
+% xcas(N) - classical Hartley spectrum
+function [ xpal ] = xcas_xpal(p, n, xcas)
+N = p^n;
+xpal = zeros(N,1);
+for i=0:(N-1)
+sum = 0;
+for ind=0:(N-1)
+sum = sum + fcas_pal(p,n,i,ind)*xcas(ind+1);
+end
+xpal(i+1) = sum;
+end
+end
+
+% Inverse Hartley transform (spectrum to signal)
+% Parameters:
+% p - base of number system
+% n - number of digits
+% xpal(N) - generalized Hartley-Paley spectrum
+% i - argument (discrete time) [0, N-1]
+% Result:
+% res - signal value s(i)
+function [ res ] = hart_itfm( p, n, xpal, i )
+N = p^n;
+res = 0;
+if (i<0)||(i>N-1)
+error('Argument i is out of range');
+end
+%alpha = ones(N,1);
+alpha = (round(rand(N,1))<1)*2-1; %+1 -1
+for k=0:(N-1)
+res = res + alpha(k+1)*xpal(k+1)*gcas_pal(p,n,k,i);
+end;
+end
