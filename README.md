@@ -6,7 +6,7 @@ Other languages, as well as a table of computational complexity and accuracy est
 The folder "Mathematics" contains matrixes of Fourier kernels relating to a matrix transformation operator. 
 Full explanation can be found in the article:
 https://www.elibrary.ru/item.asp?id=36264051
-Syuzev V.V., Smirnova E.V., Gurenko V.V. Properties of operators of mutual transformation of spectra // Problems of modern science and education. – 2018. – № 11(131). – С. 21-28. – EDN VJMXII. [In Russian]
+(Syuzev V.V., Smirnova E.V., Gurenko V.V. Properties of operators of mutual transformation of spectra // Problems of modern science and education. – 2018. – № 11(131). – С. 21-28. – EDN VJMXII. [In Russian])
 
 
 "2D Fourier" contains data on 2D Fourier simulation.
