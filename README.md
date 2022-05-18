@@ -4,7 +4,9 @@ This is a storage for multidimensional reference signals and processes within th
 Other languages, as well as a table of computational complexity and accuracy estimations, are to be added in due course.
 
 "Mathematics" folder contains relevant mathematics.
-Fuller explanation can be found in:
+Full explanation can be found in:
+
+Сюзев, В. В. Свойства операторов взаимного преобразования спектров / В. В. Сюзев, Е. В. Смирнова, В. В. Гуренко // Проблемы современной науки и образования. – 2018. – № 11(131). – С. 21-28. – EDN VJMXII. [In Russian]
 
 
 "2D Fourier" contains data on 2D Fourier simulation.
