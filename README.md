@@ -9,8 +9,6 @@ https://www.elibrary.ru/item.asp?id=36264051
 (Syuzev V.V., Smirnova E.V., Gurenko V.V. Properties of operators of mutual transformation of spectra // Problems of modern science and education. – 2018. – № 11(131). – С. 21-28. – EDN VJMXII. [In Russian])
 
 
-"2D Fourier" contains data on 2D Fourier simulation.
+"2D Fourier" contains data on 2D Fourier simulation organized into folders by experiments. Every experiments folder contains .csv and .svg results.
 
 "Licences" contains obtained licences for the software developed within the project.
-
-Every experiments folder contains .csv and .svg results.
