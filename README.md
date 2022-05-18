@@ -5,7 +5,8 @@ Other languages, as well as a table of computational complexity and accuracy est
 
 "Mathematics" folder contains relevant mathematics. 
 Full explanation can be found in the article:
-Сюзев, В. В. Свойства операторов взаимного преобразования спектров / В. В. Сюзев, Е. В. Смирнова, В. В. Гуренко // Проблемы современной науки и образования. – 2018. – № 11(131). – С. 21-28. – EDN VJMXII. [In Russian]
+https://www.elibrary.ru/item.asp?id=36264051
+Syuzev V.V., Smirnova E.V., Gurenko V.V. Properties of operators of mutual transformation of spectra // Problems of modern science and education. – 2018. – № 11(131). – С. 21-28. – EDN VJMXII. [In Russian]
 
 
 "2D Fourier" contains data on 2D Fourier simulation.
