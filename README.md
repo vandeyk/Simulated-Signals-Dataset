@@ -11,4 +11,6 @@ https://www.elibrary.ru/item.asp?id=36264051
 
 "2D Fourier" contains data on 2D Fourier simulation.
 
+"Licences" contains obtained licences for the software developed within the project.
+
 Every experiments folder contains .csv and .svg results.
